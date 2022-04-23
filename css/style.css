@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root{
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--LightGrayishBlue);
+    font-size: 1.3rem;
+    color: var(--DesaturatedDarkBlue);
+    font-family: 'Manrope', sans-serif;
+}
+.main-section-card{
+    height: 100vh;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+.card-container {
+    width: 320px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.card-container-imgs{ 
+    height: 40%;
+    background-image: url("/images/drawers.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.card-container-description{
+    height: 60%;
+    padding: 30px 32px 10px 32px;
+}
+.card-container-description h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--VeryDarkGrayishBlue);
+    margin-bottom: 12px;
+}
+.description-text{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 28px;
+}
+.description-info{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.description-info-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.description-info-profile img{
+    width: 44px;
+    border-radius: 50%;
+}
+.description-info-profile h4{
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: 700;
+    margin-bottom: 4px;   
+}
+.cont__icono{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.js-menu-button{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 850px){
+   
+    
+}
