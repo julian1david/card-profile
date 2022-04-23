@@ -1,0 +1,35 @@
+
+.card-container{
+    width: 680px;
+    height: 260px;
+    display: flex;
+}
+.card-container-img {
+    width: 266px;
+    height: 100%;
+}
+.card-container-description{
+    width: 400px;
+}
+.card-container-description h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.description-text{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.description-info-profile img{
+    width: 36px;
+}
+.description-info-profile{
+    font-size: 1.1rem;
+}
+.cont__icono{
+    width: 30px;
+    height: 30px;
+}
+.js-menu-button{
+    width: 13px;
+    height: 13px;
+}
