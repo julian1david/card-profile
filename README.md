@@ -4,7 +4,7 @@ Card of presentation part of challenge of Frontmentor
 
 ## Vista del proyecto 🚀
 
-Mira **[Card-Presentacion](https://github.com/julian1david/card-profile/)** para conocer como funciona el proyecto.
+Mira **[Card-Presentacion](https://julian1david.github.io/card-profile/)** para conocer como funciona el proyecto.
 
 
 ### Instalación 🔧
