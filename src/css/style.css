@@ -30,16 +30,17 @@ body {
     height: auto;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
+    position: relative;
 }
 .card-container-img { 
     height: 200px;
-    background-image: url("/src/images/drawers.jpg");
+    background-image: url("../src/images/drawers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
 }
 .card-container-description{
-    padding: 30px 32px 10px 32px;
+    padding: 30px 32px 8px 32px;
 }
 .card-container-description h1{
     font-size: 1.6rem;
@@ -75,25 +76,73 @@ body {
     margin-bottom: 4px;   
 }
 .cont__icono{
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: var(--LightGrayishBlue);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.js-menu-button{
-    width: 14px;
-    height: 14px;
     cursor: pointer;
 }
+.js-menu-button{
+    width: 12px;
+    height: 12px;
+}
+.modal-container{
+    height: 68px;
+    width: 300px;
+    padding: 0px 32px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    background-color: var(--VeryDarkGrayishBlue);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.modal-container h4{
+    letter-spacing: 4px;
+    color: var(--GrayishBlue);
+}
+.modal-container-icons {
+    align-self: center;
+    width: 44%;
+    margin-right: 40px;
+}
+.modal-container-icons ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    list-style: none;
+}
+.modal-container-icons ul li{
+    width: 18px;
+    height: 18px; 
+    display: flex;
+    align-items: center;
+}
+.modal-container-icons ul li a{
+    width: 18px;
+    height: 18px; 
+    display: flex;
+    align-items: center;
+}
+.modal-container-icons ul li img{
+    width: 100%;
+}
+.model-icon{
+    background-color: var(--DesaturatedDarkBlue);
+}
 .attribution {
+    height: 10vh;
     font-size: 1.1rem;
     text-align: center;
 }
-
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
+.hide-modal{
+    display: none;
+}

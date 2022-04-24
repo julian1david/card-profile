@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <title>Frontend Mentor | Article preview component</title>
   <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="stylesheet" href="./src/css/desktop.css" media="(min-width: 850px" >
+  <link rel="stylesheet" href="./src/css/desktop.css" media="(min-width: 850px">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
           </p>
           <div class="description-info">
             <div class="description-info-profile">
-              <img src="/src/images/avatar-michelle.jpg" alt="profile person picture">
+              <img src="./src/images/avatar-michelle.jpg" alt="profile person picture">
               <div class="description-info-profile-info">
                 <h4>Michelle Appleton</h4>
                 <p>28 Jun 2020</p>
@@ -40,35 +40,38 @@
             </div>
             <div class="description-info-icon">
               <div class="cont__icono" id="showModal">
-                <img src="/src/images/icon-share.svg" alt="share icon" class="js-menu-button" id="share"  />
+                <img src="./src/images/icon-share.svg" alt="share icon" class="js-menu-button" id="share-icon" />
               </div>
             </div>
           </div>
         </div>
+        <section id="control-modal" class="hide-modal">
+          <div class="modal-container">
+            <div class="modal-container-title">
+              <h4>SHARE</h4>
+            </div>
+            <div class="modal-container-icons">
+              <ul>
+                <li><a href=""><img src="./src/images/icon-facebook.svg" alt="icon-facebook"></a></li>
+                <li><a href=""><img src="./src/images/icon-twitter.svg" alt="icon-twitter"></a></li>
+                <li><a href=""><img src="./src/images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
+              </ul>
+            </div>
+            <div class="cont__icono model-icon" id="closeModal">
+              <img src="./src/images/icon-shareWhite.svg" alt="share icon" class="js-menu-button" />
+            </div>
+          </div>
+          <div class="triangle-form">
+          </div>
+        </section>
       </section>
     </section>
-    <div class="modal">
-      <div class="modal__container center">
-        <span class="modal__container--text">share</span>
-        <ul class="modal__container--list center">
-          <li class="item"><img src="./src/images/icon-facebook.svg" alt="facebook icon"></li>
-          <li class="item"><a target="_blank" href="https://twitter.com/LeoCode0"><img src="./src/images/icon-twitter.svg" alt="Twitter icon"></a></li>
-          <li class="item"><img src="./src/images/icon-pinterest.svg" alt="Pinterest icon"></li>
-        </ul>
-        <figure class="card__person--share modal__container--share center">
-          <img class="icon" src="./src/images/icon-share.svg" alt="Share" id="hideModal">
-        </figure>
-        <div class="triangle">
-        </div>
-      </div>
-    </div>
   </main>
-
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">@julianf</a>.
+    Coded by <a href="#">Do with 💚 by @julianf</a>.
   </footer>
-  <script src="/src/index.js"></script>
+  <script src="./src/index.js"></script>
 </body>
 
 </html>

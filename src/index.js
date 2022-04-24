@@ -1,22 +1,22 @@
-const SHOW = document.getElementById('showModal');
-const HIDE = document.getElementById('hideModal');
-const MODAL = document.getElementsByClassName('modal')[0];
-const SHARE = document.getElementById('share')
+const onClickModal = () =>{
 
-HIDE.onclick = () => {
-    MODAL.classList.remove('show')
-    SHARE.setAttribute('src', './src/images/icon-share.svg')
-    MODAL.classList.remove('show')
-}
+    const controlModal = document.getElementById('control-modal')
+    const imgModal = document.getElementById('share-icon')
 
-SHOW.onclick = (e) => {
-    if(MODAL.classList.contains('show')){
-        SHARE.setAttribute('src', './src/images/icon-share.svg')
-        MODAL.classList.remove('show')
-        SHOW.classList.remove("black")
-    }else{
-        SHARE.setAttribute('src', './src/images/icon-share.svg')
-        MODAL.classList.add('show')
-        SHOW.classList.add("black")
+    if(controlModal.classList.contains('hide-modal')){
+        controlModal.classList.remove('hide-modal')
+        showModal.classList.add('desktop-active')
+        imgModal.setAttribute('src', './src/images/icon-shareWhite.svg')
+    }
+    else{
+        controlModal.classList.add('hide-modal')
+        showModal.classList.remove('desktop-active')
+        imgModal.setAttribute('src', './src/images/icon-share.svg')
     }
 }
+
+//El evento siempre se debe manejar así debido a que se puede remover
+const showModal = document.getElementById("showModal");
+showModal.addEventListener('click',onClickModal)
+const closeModal = document.getElementById('closeModal')
+closeModal.addEventListener('click',onClickModal)
