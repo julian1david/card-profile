@@ -13,13 +13,14 @@
     width: 400px;
 }
 .card-container-description h1{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 .description-text{
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    font-size: 1.2rem;
     line-height: 18px;
+    margin-bottom: 40px;
+
 }
 .description-info-profile img{
     width: 36px;
